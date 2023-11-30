@@ -1,0 +1,62 @@
+.containerItem {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  gap: 1rem;
+}
+
+.completed {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.completed:checked::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: green;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  font-size: 1.6rem;
+}
+
+.button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  color: red;
+}
+
+i {
+  margin-bottom: 15px;
+}
